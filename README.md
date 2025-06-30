@@ -116,3 +116,19 @@ If you want to learn more about building Telegram bots with `aiogram`, check out
 
 [Stepik Course: "Телеграм-боты на Python и AIOgram. Введение в профессию"](https://stepik.org/course/120924/)  
 *(Russian language, free access)*
+
+## Additionals by russian
+
+Добрый день.
+Без доп команды ниже pgAdmin не был доступен, т.к. ему не хватало прав на доступ к папке:
+sudo chown -R 5050:5050 .pgadmin_data
+
+если у кого такая же ошибка будет как на скрине, то мне помогло установить libpq-dev в свой линукс, а потом в виртуальном окружении еще:
+pip install "psycopg[binary]"
+pip install "psycopg[c]"
+
+Добрый день. Долго искал, как в pgAdmin отобразить таблицы и связи (как на скриншоте в теории).
+
+Для проверки таблиц и связей в pgAdmin нужно использовать C:\Program Files\pgAdmin 4\v2\runtime\pgAdmin4.exe (Entity-Relationship Diagram): правый клик на имени БД (в нашем случае - postgres) -> ERD Tool
+
+Думаю надо добавить это в теорию.
